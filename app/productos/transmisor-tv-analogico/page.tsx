@@ -2,14 +2,14 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, PhoneIcon, MailIcon, TvIcon } from "lucide-react"
+import { ArrowLeft, PhoneIcon, MailIcon, TvIcon, Download } from "lucide-react"
 import Link from "next/link"
 
-export default function TransmisorTVAnalogicoPage() {
+export default function TransmisorTVPage() {
   const handleDownloadSpecs = () => {
     const link = document.createElement("a")
-    link.href = "/Manual_transmisor_de_RTV-100T.pdf"
-    link.download = "Manual_transmisor_de_RTV-100T.pdf"
+    link.href = "/ONDIAIR_RTV-100T_MANUAL.pdf"
+    link.download = "ONDIAIR_RTV-100T_MANUAL.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -129,8 +129,13 @@ export default function TransmisorTVAnalogicoPage() {
                 </CardContent>
               </Card>
 
-              <Button variant="default" size="lg" className="w-full" onClick={handleDownloadSpecs}>
-                Descargar Especificaciones (PDF)
+              <Button
+                onClick={handleDownloadSpecs}
+                className="w-full bg-primary hover:bg-primary/90 text-white"
+                size="lg"
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Descargar Especificaciones
               </Button>
             </div>
           </div>
