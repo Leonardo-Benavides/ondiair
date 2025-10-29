@@ -1,9 +1,20 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowLeft, PhoneIcon, MailIcon, TvIcon } from "lucide-react"
 import Link from "next/link"
 
 export default function TransmisorTVAnalogicoPage() {
+  const handleDownloadSpecs = () => {
+    const link = document.createElement("a")
+    link.href = "/Manual_transmisor_de_RTV-100T.pdf"
+    link.download = "Manual_transmisor_de_RTV-100T.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary/10 via-primary/5 to-background">
       {/* Navigation */}
@@ -117,6 +128,10 @@ export default function TransmisorTVAnalogicoPage() {
                   </ul>
                 </CardContent>
               </Card>
+
+              <Button variant="default" size="lg" className="w-full" onClick={handleDownloadSpecs}>
+                Descargar Especificaciones (PDF)
+              </Button>
             </div>
           </div>
 
