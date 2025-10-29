@@ -1,0 +1,44 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-7bbb430198a78cc7.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-53990574df6c28e4.js",
+      "static/chunks/app/_not-found/page-6d452be1c17053da.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-7bbb430198a78cc7.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-53990574df6c28e4.js",
+      "static/css/e606eaea451961ea.css",
+      "static/chunks/app/layout-15f999ac9e8f08e3.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-7bbb430198a78cc7.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-53990574df6c28e4.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/page-59495ec2c0447e1c.js"
+    ],
+    "/productos/transmisor-tv-analogico/page": [
+      "static/chunks/webpack-7bbb430198a78cc7.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-53990574df6c28e4.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/productos/transmisor-tv-analogico/page-59495ec2c0447e1c.js"
+    ],
+    "/productos/transmisor-tv-isdb-t/page": [
+      "static/chunks/webpack-7bbb430198a78cc7.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cf2e1d3491ac955b.js",
+      "static/chunks/main-app-53990574df6c28e4.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/567-640653f5e3b18481.js",
+      "static/chunks/app/productos/transmisor-tv-isdb-t/page-b45ed4a7e5cf7a5c.js"
+    ]
+  }
+}
