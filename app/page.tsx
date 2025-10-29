@@ -3,11 +3,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { PhoneIcon, MailIcon, TvIcon } from "lucide-react"
 import Link from "next/link"
 
+import { ThemeToggle } from "@/components/theme-toggle"
+
 export default function OndiairHomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary/10 via-primary/5 to-background">
+    <div className="min-h-screen bg-gradient-to-b from-primary/10 via-primary/5 to-background dark:from-[#27171B] dark:via-[#21171D] dark:to-[#1B1A1C]">
       {/* Navigation */}
-      <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+      <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 dark:bg-[#191A1B]/95 dark:border-[#2A2B2D]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -35,6 +37,7 @@ export default function OndiairHomePage() {
               <Button variant="outline" size="sm" asChild>
                 <a href="#contacto">Contacto</a>
               </Button>
+              <ThemeToggle />
             </div>
           </div>
         </div>
@@ -55,7 +58,7 @@ export default function OndiairHomePage() {
       </section>
 
       {/* Products Section */}
-      <section id="productos" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section id="productos" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30 dark:bg-[#21181C]/60">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Nuestros Productos</h2>
@@ -68,7 +71,7 @@ export default function OndiairHomePage() {
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">Transmisores TV</h3>
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {/* Transmisor TV Analógico */}
-              <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary/20">
+              <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary/40 dark:bg-[#23181C] dark:border-[#2F2025]">
                 <CardHeader className="pb-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
                     <TvIcon className="w-5 h-5 text-primary" />
@@ -90,7 +93,7 @@ export default function OndiairHomePage() {
                     <li>• Diseño rack estándar 19"</li>
                   </ul>
                   <Link href="/productos/transmisor-tv-analogico">
-                    <Button variant="outline" size="sm" className="w-full bg-transparent">
+                    <Button variant="outline" size="sm" className="w-full bg-transparent dark:bg-transparent dark:border-primary/30 dark:text-primary">
                       Ver Detalles
                     </Button>
                   </Link>
@@ -98,7 +101,7 @@ export default function OndiairHomePage() {
               </Card>
 
               {/* Transmisor TV Digital ISDB-T */}
-              <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary/20">
+              <Card className="hover:shadow-lg transition-shadow border-2 hover:border-primary/40 dark:bg-[#23181C] dark:border-[#2F2025]">
                 <CardHeader className="pb-3">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
                     <TvIcon className="w-5 h-5 text-primary" />
@@ -122,7 +125,7 @@ export default function OndiairHomePage() {
                     <li>• Frecuencia de transmisión Televisión estándar ISDB-T</li>
                   </ul>
                   <Link href="/productos/transmisor-tv-isdb-t">
-                    <Button variant="outline" size="sm" className="w-full bg-transparent">
+                    <Button variant="outline" size="sm" className="w-full bg-transparent dark:bg-transparent dark:border-primary/30 dark:text-primary">
                       Ver Detalles
                     </Button>
                   </Link>
@@ -161,7 +164,7 @@ export default function OndiairHomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-background py-12 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-foreground text-background py-12 px-4 sm:px-6 lg:px-8 dark:bg-[#393D40] dark:text-[#F8F9FB]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
@@ -185,7 +188,7 @@ export default function OndiairHomePage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-60">
+          <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-60 dark:border-white/10">
             <p>&copy; 2025 ONDIAIR. Todos los derechos reservados.</p>
           </div>
         </div>

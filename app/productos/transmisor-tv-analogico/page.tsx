@@ -5,6 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, PhoneIcon, MailIcon, TvIcon, Download } from "lucide-react"
 import Link from "next/link"
 
+import { ThemeToggle } from "@/components/theme-toggle"
+
 export default function TransmisorTVPage() {
   const handleDownloadSpecs = () => {
     const link = document.createElement("a")
@@ -16,9 +18,9 @@ export default function TransmisorTVPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary/10 via-primary/5 to-background">
+    <div className="min-h-screen bg-gradient-to-b from-primary/10 via-primary/5 to-background dark:from-[#27171B] dark:via-[#21171D] dark:to-[#1B1A1C]">
       {/* Navigation */}
-      <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+      <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 dark:bg-[#191A1B]/95 dark:border-[#2A2B2D]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -48,6 +50,7 @@ export default function TransmisorTVPage() {
               <Button variant="outline" size="sm" asChild>
                 <Link href="/#contacto">Contacto</Link>
               </Button>
+              <ThemeToggle />
             </div>
           </div>
         </div>
@@ -59,7 +62,7 @@ export default function TransmisorTVPage() {
           <Link href="/#productos">
             <Button
               variant="outline"
-              className="mb-8 border-primary text-primary hover:bg-primary hover:text-white bg-transparent"
+              className="mb-8 border-primary text-primary hover:bg-primary hover:text-white bg-transparent dark:border-primary/60"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Volver
@@ -69,7 +72,7 @@ export default function TransmisorTVPage() {
           <div className="grid lg:grid-cols-2 gap-12 mb-12">
             {/* Product Images */}
             <div className="space-y-4">
-              <div className="rounded-lg overflow-hidden border-2 border-border">
+              <div className="rounded-lg overflow-hidden border-2 border-border dark:border-[#2F2025]">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/transmisor%20Tv-hz2m4wj295ph26Yl4nv4VCJFXvrEgy.jpg"
                   alt="Transmisor TV Analógico ONDIAIR RTV 50 T - Vista frontal"
@@ -95,7 +98,7 @@ export default function TransmisorTVPage() {
                 </p>
               </div>
 
-              <Card className="mb-6">
+              <Card className="mb-6 dark:bg-[#23181C] dark:border-[#2F2025]">
                 <CardHeader>
                   <CardTitle>Descripción del Producto</CardTitle>
                 </CardHeader>
@@ -141,7 +144,7 @@ export default function TransmisorTVPage() {
           </div>
 
           {/* Technical Specifications */}
-          <Card className="mb-12">
+          <Card className="mb-12 dark:bg-[#23181C] dark:border-[#2F2025]">
             <CardHeader>
               <CardTitle className="text-2xl">Características Técnicas</CardTitle>
               <CardDescription>Especificaciones completas del transmisor TV analógico</CardDescription>
@@ -196,7 +199,7 @@ export default function TransmisorTVPage() {
           </Card>
 
           {/* Contact Section */}
-          <Card className="bg-primary/5 border-primary/20">
+          <Card className="bg-primary/5 border-primary/20 dark:bg-[#23181C] dark:border-[#2F2025]">
             <CardHeader>
               <CardTitle className="text-2xl">Solicita Más Información</CardTitle>
               <CardDescription>
@@ -205,14 +208,14 @@ export default function TransmisorTVPage() {
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="flex items-center gap-4 p-4 bg-background rounded-lg">
+                <div className="flex items-center gap-4 p-4 bg-background rounded-lg dark:bg-[#24181C] dark:border dark:border-[#2F2025]">
                   <PhoneIcon className="w-6 h-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-foreground">Teléfono</p>
                     <p className="text-muted-foreground">+51982821624</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-background rounded-lg">
+                <div className="flex items-center gap-4 p-4 bg-background rounded-lg dark:bg-[#24181C] dark:border dark:border-[#2F2025]">
                   <MailIcon className="w-6 h-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-foreground">Email</p>
@@ -226,7 +229,7 @@ export default function TransmisorTVPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-background py-12 px-4 sm:px-6 lg:px-8 mt-12">
+      <footer className="bg-foreground text-background py-12 px-4 sm:px-6 lg:px-8 mt-12 dark:bg-[#393D40] dark:text-[#F8F9FB]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
@@ -250,7 +253,7 @@ export default function TransmisorTVPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-60">
+          <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-60 dark:border-white/10">
             <p>&copy; 2025 ONDIAIR. Todos los derechos reservados.</p>
           </div>
         </div>
