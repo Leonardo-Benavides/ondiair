@@ -12,7 +12,16 @@ export default function OndiairHomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-primary">ONDIAIR</h1>
+                <img
+                  src="/desktop.png"
+                  alt="ONDIAIR Logo"
+                  className="hidden md:block h-12"
+                />
+                <img
+                  src="/mobile.png"
+                  alt="ONDIAIR Logo"
+                  className="md:hidden h-10"
+                />
               </div>
             </div>
             <div className="hidden md:block">
@@ -28,6 +37,12 @@ export default function OndiairHomePage() {
                   className="text-foreground hover:text-primary transition-all duration-200 hover:shadow-md px-2 py-1 rounded"
                 >
                   Productos
+                </a>
+                <a
+                  href="#direcciones"
+                  className="text-foreground hover:text-primary transition-all duration-200 hover:shadow-md px-2 py-1 rounded"
+                >
+                  Direcciones
                 </a>
               </div>
             </div>
@@ -133,8 +148,64 @@ export default function OndiairHomePage() {
         </div>
       </section>
 
+      {/* Direcciones Section */}
+      <section id="direcciones" className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Nuestras Direcciones</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Encuentre nuestras oficinas en Argentina y Perú
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Oficina Principal - Argentina */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Oficina Principal</CardTitle>
+                <CardDescription>Córdoba, Argentina</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="aspect-video w-full">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.13984841859!2d-64.27942742353902!3d-31.32751069196209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329c38399eaab1%3A0xc72a9d0cd5149abe!2sAgua%20de%20la%20Pilona%208136%2C%20X5022BFT%20C%C3%B3rdoba!5e0!3m2!1sen!2sar!4v1761934726929!5m2!1sen!2sar"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Sede Perú */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Sede en Perú</CardTitle>
+                <CardDescription>Lince, Lima</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="aspect-video w-full">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.373740927692!2d-77.03969062405004!3d-12.08654664264456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c85f6f928f13%3A0x94ef2a52701d5226!2sJr.%20Mariscal%20William%20Miller%202182%2C%20Lince%2015073%2C%20Peru!5e0!3m2!1sen!2sar!4v1761934606448!5m2!1sen!2sar"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contacto" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="contacto" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">¿Listo para Potenciar tu Transmisión?</h2>
           <p className="text-xl text-muted-foreground mb-8">
@@ -146,7 +217,14 @@ export default function OndiairHomePage() {
               <CardContent className="p-6 text-center">
                 <PhoneIcon className="w-8 h-8 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Teléfono</h3>
-                <p className="text-muted-foreground">+51982821624</p>
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <img src="https://flagcdn.com/w40/ar.png" alt="Argentina" className="w-6 h-4" />
+                  <p className="text-muted-foreground">+54 9 351 552-8285</p>
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <img src="https://flagcdn.com/w40/pe.png" alt="Peru" className="w-6 h-4" />
+                  <p className="text-muted-foreground">+51982821624</p>
+                </div>
               </CardContent>
             </Card>
             <Card>
