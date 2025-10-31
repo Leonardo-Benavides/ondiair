@@ -1,15 +1,45 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-f01e7b088fbf31ef.js",
+      "static/chunks/fd9d1056-23c08b0fa14f151e.js",
+      "static/chunks/117-2b66518246310594.js",
+      "static/chunks/main-app-fb058c5bfc0237f0.js",
+      "static/chunks/app/_not-found/page-0abb113af418d6fa.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-f01e7b088fbf31ef.js",
+      "static/chunks/fd9d1056-23c08b0fa14f151e.js",
+      "static/chunks/117-2b66518246310594.js",
+      "static/chunks/main-app-fb058c5bfc0237f0.js",
+      "static/css/48ab331c7e526f78.css",
+      "static/chunks/app/layout-7c094e8264283a99.js"
+    ],
+    "/productos/transmisor-tv-analogico/page": [
+      "static/chunks/webpack-f01e7b088fbf31ef.js",
+      "static/chunks/fd9d1056-23c08b0fa14f151e.js",
+      "static/chunks/117-2b66518246310594.js",
+      "static/chunks/main-app-fb058c5bfc0237f0.js",
+      "static/chunks/972-e222057dd22839bf.js",
+      "static/chunks/201-c56d3f5980273ab5.js",
+      "static/chunks/app/productos/transmisor-tv-analogico/page-a9407ac57959fc1f.js"
+    ],
+    "/productos/transmisor-tv-isdb-t/page": [
+      "static/chunks/webpack-f01e7b088fbf31ef.js",
+      "static/chunks/fd9d1056-23c08b0fa14f151e.js",
+      "static/chunks/117-2b66518246310594.js",
+      "static/chunks/main-app-fb058c5bfc0237f0.js",
+      "static/chunks/972-e222057dd22839bf.js",
+      "static/chunks/201-c56d3f5980273ab5.js",
+      "static/chunks/app/productos/transmisor-tv-isdb-t/page-0b315f42df35fd3d.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-f01e7b088fbf31ef.js",
+      "static/chunks/fd9d1056-23c08b0fa14f151e.js",
+      "static/chunks/117-2b66518246310594.js",
+      "static/chunks/main-app-fb058c5bfc0237f0.js",
+      "static/chunks/972-e222057dd22839bf.js",
+      "static/chunks/app/page-3568a20b7219780c.js"
     ]
   }
 }

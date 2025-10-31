@@ -133,7 +133,7 @@ export default function OndiairHomePage() {
                   </div>
                   <ul className="space-y-1 text-xs text-muted-foreground mb-3">
                     <li>• Potencia de transmisión RF 100 vatios</li>
-                    <li>• Voltaje de alimentación: AC 200 a 240V，50/60Hz</li>
+                    <li>• Voltaje de alimentación: AC 200 a 240V, 50/60Hz</li>
                     <li>• Frecuencia de transmisión Televisión estándar ISDB-T</li>
                   </ul>
                   <Link href="/productos/transmisor-tv-isdb-t">
